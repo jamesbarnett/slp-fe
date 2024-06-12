@@ -104,6 +104,9 @@ body {
   font-size: var(--fs-400);
   color: var(--clr-neutral-100);
   background-color: var(--clr-neutral-900);
+  display: grid;
+  height: 100vh;
+  align-items: center;
 }
 
 .wrapper {
@@ -118,12 +121,7 @@ body {
   background-color: var(--clr-neutral-700);
   display: grid;
   place-items: center;
-  gap: 0.5rem;
   border-radius: 0.75rem;
-}
-
-hgroup {
-  width: 100%;
 }
 
 .talent--image {
@@ -132,7 +130,8 @@ hgroup {
   margin-right: auto;
   width: 9.75ch;
   border-radius: 50%;
-  margin-bottom: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
 }
 
 .talent--name  {
@@ -140,19 +139,23 @@ hgroup {
   font-weight: var(--fw-700);
   font-size: var(--fs-700);
   width: 100%;
-  line-height: 1.2rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
 }
 
 .talent--location  {
   color: var(--clr-primary-400);
   font-weight: var(--fw-600);
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.9rem;
 }
 
 .talent--tagline {
   font-weight: var(--fw-400);
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  padding-bottom: 0.9rem;
 }
 
 .talent--social-links {
@@ -184,9 +187,6 @@ hgroup {
   body {
     --side-margin: 1.35rem;
 
-    display: grid;
-    height: 100vh;
-    align-items: center;
     margin-left: var(--side-margin);
     margin-right: var(--side-margin);
   }
