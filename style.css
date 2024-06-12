@@ -151,6 +151,8 @@ hgroup {
 
 .talent--tagline {
   font-weight: var(--fw-400);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .talent--social-links {
@@ -178,7 +180,7 @@ hgroup {
   background-color: var(--clr-primary-400);
 }
 
-@media (max-width: 383px) {
+@media (max-width: 384px) {
   body {
     --side-margin: 1.35rem;
 
@@ -189,16 +191,18 @@ hgroup {
     margin-right: var(--side-margin);
   }
 
-  .talent--image {
-    margin-top: 1rem;
-  }
-
   .wrapper {
     width: calc(100% - 0.25rem);
   }
 
+  .talent--image {
+    margin-top: 1rem;
+  }
+
   .talent--social-links {
     width: 85%;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
   }
 }
 
